@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: rgb(255, 213, 213);
+    /* background: linear-gradient(90deg, #5936b4 0%, #362a84 100%); */
+    /* background-image: url(https://i.ytimg.com/vi/-Y9y3T0GO7E/maxresdefault.jpg); */
+    background-size: cover;
+    /* position: center; */
+    color: #222;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .temperature-converter {
+    /* background: rgb(255, 213, 213); */
+    background-color: #FBF0E6;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 25px 45px;
+    /* min-width: 320px; */
+    min-width: 520px;
+    width: 100%;
+    min-height: 520px;
+    /* height: auto; */
+    box-shadow: -5px -5px 250px 0px rgba(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(21px);
+    border: 1px solid gray;
+    margin-left: 10%;
+  }
+  
+  .title {
+    color: red;
+    font-weight: 900;
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: Gilroy;
+    /* background-color: gold; */
+    height: 60px;
+  }
+  .result {
+    text-align: center;
+    margin: 20px 0;
+    font-family: Gilroy;
+   
+  }
+  .result-heading {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .celsius-value {
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+  }
+  label {
+    color: #000000;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  input,
+  select {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  input:focus {
+    border: 1px solid #acacac;
+  }
+  .degree-type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 16px;
+    background-color: rgb(255, 231, 231);
+
+  }
+  .degree-field {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    color: #000000;
+    /* background-color: #fff; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    
+    
+  }
+  option {
+    background-color: red;
+    color: #f6f6f6;
+  }
+  #convert-btn {
+    background: linear-gradient(to bottom,  red, rgb(173, 82, 82));
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #f6f6f6;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 32px;
+    padding: 12px 80px;
+    transition: all 0.3s ease-in;
+    border: 1px solid black;
+
+  }
+  #convert-btn:hover {
+    /* background: linear-gradient(to bottom, #4a47e7, #322fda); */
+    background: linear-gradient();
+  }
+  
+  /* Add a right margin to each icon */
+  
+  .fa {
+    margin-left: -12px;
+    margin-right: 8px;
+  }
+  
+  .loading {
+    display: none;
+  }
+
+  .temp-field label{
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    /* font-size: 20px; */
+    margin-top: 2px;
+    /* background-color: #fff; */
+    display: flex;
+  }
+  .img img{
+    position: absolute;
+    height: 35%;
+    top: 15%;
+    left: 30%;
+    transform: translate(-50%, 50%);
+  }
